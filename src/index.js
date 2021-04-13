@@ -56,6 +56,9 @@ const App = connect(
         dispatch(loadStudents(students));
         dispatch(loadCampuses(campuses));
       },
+      /*it doesnt look like you ever use this setView function...
+      I believe this is what we used before using react router, so this
+      isn't necessary anymore. */
       setView: function (view) {
         dispatch(setView(view));
       },

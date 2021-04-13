@@ -23,6 +23,7 @@ const Student = ({ student, campus, destroyStudent }) => {
           : "Student is not going to school or didn't pass his senior checkpoint......."}
       </h5>
       <p>
+        {/*use Link instead of <a> */}
         <a href={`#/campuses/${student.campusId}`}>{campus.name}</a>
       </p>
     </div>

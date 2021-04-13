@@ -1,0 +1,3 @@
+Great job, Itai! It's really clear how much work you've put into this and how much you've improved through working on this project! I Know you didn't get the chance to finish, but I would recommend going back and working on some of this. Especially working with forms! You'll need all of these CRUD skills for grace shopper :) I've made a couple comments in files throughout. I'm happy to review any progress you make if you want to keep working on this for the next few weeks, which I strongly recommend. 
+
+I typically think it's more efficient and easier to have a separate object in the state for a single student or a single campus instead of looping over campuses to find the campus with a matching id.

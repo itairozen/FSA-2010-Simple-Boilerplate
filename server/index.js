@@ -120,6 +120,8 @@ const init = async () => {
   }
 };
 
+/*your validation in the Campus model is a little off
+but you have it right in the Student model. */
 const Campus = db.define("campus", {
   name: {
     type: STRING,
@@ -177,6 +179,7 @@ const Student = db.define("student", {
   },
 });
 
+/*ideally the db stuff would be in a separate file */
 Student.belongsTo(Campus);
 Campus.hasMany(Student, { as: "campusId" });
 

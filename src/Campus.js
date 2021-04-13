@@ -5,6 +5,8 @@ import axios from "axios";
 
 const Campus = ({ campus, students, destroyCampus }) => {
   if (!campus.id) {
+    //instead of returning null, how about a message
+    //that the campus was not found?
     return null;
   }
   return (
@@ -20,6 +22,8 @@ const Campus = ({ campus, students, destroyCampus }) => {
           return (
             <div key={student.id}>
               <p>
+                {/*instead of using the <a> tag here, you could use the Link component
+                from react-router-dom */}
                 <a href={`#/students/${student.id}`}>
                   {student.firstName} {student.lastName}
                 </a>

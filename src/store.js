@@ -38,6 +38,8 @@ const studentsReducer = (state = [], action) => {
   return state;
 };
 
+//again, we no longer need to have 'view' in state since
+//react-router-dom offers that functionality
 const viewReducer = (state = "", action) => {
   if (action.type === SET_VIEW) {
     state = action.view;
